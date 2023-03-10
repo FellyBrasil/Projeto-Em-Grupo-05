@@ -3,7 +3,7 @@
 ## API Programadores Cariocas
 
 Como o tema do nosso projeto, fizemos uma API baseada na iniciativa da Prefeitura do RJ.<br>
-A API contém 4 rotas e todas as rotas contém todos os métodos HTTP (GET, POST, PUT, DELETE).<br>
+A API contém 5 rotas, 4 delas contendo todos os métodos HTTP (GET, POST, PUT, DELETE) e uma rota contendo apenas o método POST.<br>
 
 ## Como instalar e iniciar a API
 
@@ -26,12 +26,18 @@ A API contém 4 rotas e todas as rotas contém todos os métodos HTTP (GET, POST
 ## Como usar a API
 
 - Dentro da sua plataforma de API, existe um local para inserir uma URL, neste local, digite a seguinte URL: `http://localhost:3000/rota`.
-- No lugar de **rota**, preencha com uma das 4 rotas disponíveis na API: **candidatos**, **aprovados**, **polos**, **zonas**.
+- No lugar de **rota**, preencha com uma das 5 rotas disponíveis na API: **candidatos**, **aprovados**, **polos**, **zonas**, **login**.
 - Agora escolha um dos métodos HTTP.
   > Importante dizer que nos métodos PUT e DELETE é obrigatório passar um **ID** como parâmetro na URL.<br>
   > No método GET isso se torna opcional.
 
 ### Visual da API fazendo as requisições
+
+Método POST na rota de Login. Usando dados do próprio banco de dados e a resposta esperada.<br>
+
+![POST Login](https://user-images.githubusercontent.com/113534686/224367474-51e1a93b-4d70-47d4-9c70-86df423fc4a6.png)
+
+A partir daqui todos os métodos podem ser usados, trocando apenas a rota.<br>
 
 Método GET na rota de Candidatos para retornar todos os candidatos.<br>
 
